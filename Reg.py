@@ -15,7 +15,7 @@ password = random_password(8)
 
 with sync_playwright() as p:
     for browser_type in [p.chromium, p.firefox, p.webkit]:
-        email = random_email(7) + "@gmail.com"
+        email = random_email(7) + "@mailinator.com"
         password = random_password(8)
         print(browser_type.name, 'start test')
         browser = browser_type.launch()
